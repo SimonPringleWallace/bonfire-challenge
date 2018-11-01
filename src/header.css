@@ -15,12 +15,14 @@ a {
 img {
   height: 22px;
   width: 200px;
+  margin-left: 65px;
 }
 .nav-options {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin: 65px 65px;
 }
 li {
   padding: 0px;

@@ -1,0 +1,26 @@
+.hero {
+  flex-direction: column;
+  width: 100%;
+  height:425px;
+  margin: 0px;
+  background-image: url('./images/hero-image.png');
+  background-size: cover;
+}
+.greeting {
+  text-align: center;
+  width: 535px;
+  margin: 0 auto;
+  color: rgb(255,255,255)
+}
+h1 {
+  /* TODO: double check distance between this and the header looks a little low*/
+  font-size: 44px;
+  font-family: georgia;
+  margin-bottom: 20px;
+}
+p {
+  margin: 0px;
+  font-size:18px;
+  font-family: helvetica;
+  line-height: 1.25;
+}
