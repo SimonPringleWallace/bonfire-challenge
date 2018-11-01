@@ -7,11 +7,19 @@ class FilterButton extends Component {
       isClicked: false
     }
   }
+  clickButton = () => {
+    this.setState({isClicked: !this.state.isClicked})
+    console.log('was clicked')
+  }
   render() {
 
     return (
       <React.Fragment>
-        <button className='filter-button'>{this.props.value}</button>
+        <button
+          className={`filter-button${this.state.isClicked? '-clicked' : ''}`}
+          onClick={this.clickButton}
+          >{this.props.value}
+          </button>
       </React.Fragment>
     )
   }

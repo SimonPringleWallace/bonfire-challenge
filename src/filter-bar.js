@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import FilterButton from './filter-button.js';
 import  './filter.css'
 
-class Filters extends Component {
+class Filters extends Component {  
+
   render() {
+
 
     return (
       <div className='filter-container'>

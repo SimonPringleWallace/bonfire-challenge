@@ -1,6 +1,7 @@
 .filter-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: -25px;
 }
 .filter-button {
@@ -20,12 +21,11 @@
 }
 .filter-button-clicked {
   background-color: rgb(253,236,202);
-  width: 175px;
-  height:55px;
+  width: 179px;
+  height:59px;
   font-family: helvetica;
   font-size: 14px;
   color:rgb(0,0,0);
   text-transform: uppercase;
   text-align: center;
-  margin-top:-2px;
 }
