@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Header} from './header.js';
 import './hero.css';
 
@@ -11,7 +11,7 @@ export const Hero = () => (
       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna
       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris. 
+      ullamco laboris.
     </p>
   </div>
   </div>

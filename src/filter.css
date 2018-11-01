@@ -1,0 +1,31 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+.filter-button {
+  background-color: rgb(105,101,121);
+  width: 175px;
+  height:55px;
+  font-family: helvetica;
+  font-size: 14px;
+  color:rgb(255,255,255);
+  text-transform: uppercase;
+  text-align: center;
+  transition: margin .3s;
+}
+.filter-button:hover {
+  margin-top:-2px;
+  transition: margin .3s;
+}
+.filter-button-clicked {
+  background-color: rgb(253,236,202);
+  width: 175px;
+  height:55px;
+  font-family: helvetica;
+  font-size: 14px;
+  color:rgb(0,0,0);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top:-2px;
+}
