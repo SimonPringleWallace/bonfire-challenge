@@ -3,7 +3,7 @@
   margin:0px;
   background: linear-gradient(
     to bottom,
-    rgb(231,237,242),
+    rgb(231,237,242), /*light-grey*/
     rgb(255,255,255)
     )
 }
@@ -14,26 +14,59 @@
   flex-flow: wrap;
   margin: 0px 50px;
 }
+.box-content {
+  margin-top:80px;
+  transition: .5s;
+}
 .box {
   height: 280px;
   width: 335px;
   text-align:center;
-  margin: 15px;
+  margin: 18px;
   font-family: helvetica;
   text-transform: uppercase;
-  box-shadow: 2px 2px rgb(229,236,238);
+  box-shadow: 2px 2px rgb(229,236,238); /*light-grey*/
   background-color: rgb(255,255,255);
   border-radius:4px;
+  transition: .5s;
+}
+.box:hover{
+  margin-top:-1px;
+  border-top: 3px solid rgb(216, 58, 106); /*red*/
+  transition: .5s;
+}
+.box:hover h3 {
+  color: rgb(202, 169, 125); /*bronze*/
+}
+.box:hover .box-content{
+margin-top: 55px;
+transition: .5s;
+}
+.box:hover .case-study {
+  opacity:1;
+  transition: .5s;
 }
 h3 {
   font-weight: 500;
   font-size: 30px;
-  color: rgb(170,174,182)
+  color: rgb(170,174,182) /*grey*/
 }
 .card-description {
-  color: rgb(105,101,121);
+  color: rgb(105,101,121); /*dark grey*/
   font-weight: 900;
   font-size: 14px;
   margin-top:-10px;
 
+}
+.case-study{
+  margin-top: 75px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight:600;
+  color: rgb(255,255,255);
+  background-color:rgb(105, 101, 121); /*eggplant*/
+  width:85%;
+  height:55px;
+  opacity:0;
+  transition: .5s;
 }
