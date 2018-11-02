@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -25px;
+  margin-top: 85px;
 }
 .filter-button {
   background-color: rgb(105,101,121);
@@ -21,7 +21,7 @@
 }
 .filter-button-clicked {
   background-color: rgb(253,236,202);
-  width: 179px;
+  width: 175px;
   height:59px;
   font-family: helvetica;
   font-size: 14px;

@@ -1,5 +1,7 @@
 import React from 'react';
 import {Header} from './header.js';
+import FilterButton from './filter-button.js'
+import './filter.css'
 import './hero.css';
 
 export const Hero = () => (
@@ -13,6 +15,11 @@ export const Hero = () => (
       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
       ullamco laboris.
     </p>
+  </div>
+  <div className='filter-container'>
+    <FilterButton value='show all'> </FilterButton>
+    <FilterButton value='show even'> </FilterButton>
+    <FilterButton value='show odd'> </FilterButton>
   </div>
   </div>
 )
