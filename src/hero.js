@@ -26,7 +26,7 @@ class Hero extends React.Component {
     }
     console.log(this.state)
   }
-
+// TODO: DRY out these three functions
   showAll = () => {
     if (this.state.showAll) {
       return '-clicked'
