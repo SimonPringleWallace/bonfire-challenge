@@ -59,7 +59,7 @@ li {
 
 /* phone  media query */
 
-@media (max-width: 400px){
+@media (max-width: 460px){
   img {
     height: 20px;
     width: 176px;

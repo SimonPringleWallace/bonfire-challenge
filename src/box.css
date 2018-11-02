@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  margin: 0px 50px;
+  margin: 0px;
 }
 .box-content {
   margin-top:80px;

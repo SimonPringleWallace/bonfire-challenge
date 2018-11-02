@@ -42,10 +42,27 @@ p {
   }
 
 }
+/* intermediary level for between ipad and phone */
+@media (max-width: 550px) {
+  .hero {
+    width: 100%;
+    height:325px;
+  }
+  .greeting {
+    width: 400px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom:15px;
+  }
+  p {
+    font-size:14px;
+  }
+}
 
 /* phone  media query */
 
-@media (max-width: 400px) {
+@media (max-width: 460px) {
   .hero {
     width: 100%;
     height:325px;
