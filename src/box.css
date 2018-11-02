@@ -1,0 +1,31 @@
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 50px 50px;
+
+
+}
+.box {
+  height: 280px;
+  width: 335px;
+  text-align:center;
+  margin: 15px;
+  font-family: helvetica;
+  text-transform: uppercase;
+  /* box-shadow: 1px 1px; */
+  background-color: rgb(255,255,255);
+  border-radius:4px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  color: rgb(170,174,182)
+}
+.card-description {
+  color: rgb(105,101,121);
+  font-weight: 900;
+  font-size: 14px;
+  margin-top:-10px;
+
+}
