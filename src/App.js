@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Hero} from './hero.js';
+import Hero from './hero.js';
 import BoxContainer from './box-container.js'
 import './App.css';
 
@@ -16,7 +16,7 @@ componentDidMount(){
   this.setState({showAll: true})
 }
 
-filterBoxes = async (value) => {
+filterBoxes = (value) => {
 if (value === 'show all'){
   this.setState({showAll: true, showEven: false, showOdd: false})
 }else if (value === 'show even'){
@@ -30,7 +30,9 @@ if (value === 'show all'){
     return (
       <React.Fragment>
         <Hero
-        filterBoxes = {this.filterBoxes.bind(this)} />
+        filterBoxes = {this.filterBoxes.bind(this)}
+        isClicked={this.state}
+        />
         <BoxContainer
         filter = {this.state} />
       </React.Fragment>

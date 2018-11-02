@@ -4,6 +4,7 @@ import Box from './box.js'
 import './box.css'
 
 const BoxContainer = ({filter}) => {
+  // TODO: add animation to make the filtering process less jarring
 
   // generate boxes on the web page based off of the data in the array above
   const boxFilter = () => {
