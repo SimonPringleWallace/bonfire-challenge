@@ -56,7 +56,6 @@ h3 {
   font-weight: 900;
   font-size: 14px;
   margin-top:-10px;
-
 }
 .case-study{
   margin-top: 75px;
@@ -69,4 +68,47 @@ h3 {
   height:55px;
   opacity:0;
   transition: .5s;
+}
+/* ipad */
+@media (max-width: 800px) {
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin: 0px 35px;
+  }
+  .box {
+    height: 230px; /*50px less than original*/
+    width: 285px;
+    margin: 10px;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(170,174,182) /*grey*/
+  }
+  .card-description {
+    color: rgb(105,101,121); /*dark grey*/
+    font-weight: 800;
+    font-size: 12px;
+    margin-top:-10px;
+  }
+  .case-study{
+    margin-top: 70px;
+    font-size: 14px;
+    font-weight:600;
+    color: rgb(255,255,255);
+    background-color:rgb(105, 101, 121); /*eggplant*/
+    width:85%;
+    height:55px;
+    transition: .1s;
+  }
+  .box:hover .box-content{
+  margin-top: 29px;
+  transition: .4s;
+  }
+  .box:hover .case-study {
+    opacity:1;
+    transition: .8s;
+  }
 }

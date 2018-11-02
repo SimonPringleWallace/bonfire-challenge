@@ -32,3 +32,27 @@ li {
 .away-button {
   margin-right: -25px;
 }
+
+@media (max-width: 800px){
+  img {
+    height: 15px;
+    width: 136px;
+    margin-left: 45px;
+  }
+  .nav-options {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 35px;
+  }
+  li {
+    padding: 0px;
+    margin: 0 25px;
+    font-size: 16px;
+  }
+  .away-button {
+    margin-right: -25px;
+  }
+
+}

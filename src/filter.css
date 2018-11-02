@@ -32,3 +32,27 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (max-width: 800px){
+  .filter-container {
+    margin-top: 87px;
+  }
+  .filter-button {
+    width: 140px;
+    height:44px;
+    font-size: 14px;
+  }
+  .filter-button:hover {
+    background-color: rgb(253,236,202);
+    color:rgb(82,72,93);
+    font-weight:600;
+
+  }
+  .filter-button-clicked {
+    width: 140px;
+    height:48px;
+    font-size: 14px;
+    font-weight:600;
+    color:rgb(82,72,93);
+  }
+}
