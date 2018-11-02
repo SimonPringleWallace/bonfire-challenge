@@ -4,7 +4,6 @@ import Box from './box.js'
 import './box.css'
 
 const BoxContainer = ({filter}) => {
-  console.log(filter.showEven)
 
   // generate boxes on the web page based off of the data in the array above
   const boxFilter = () => {

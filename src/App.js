@@ -7,15 +7,30 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      showAll: false,
-      showEven: false,
-      showOdd: true
+      showAll: null,
+      showEven: null,
+      showOdd: null
     }
   }
+componentDidMount(){
+  this.setState({showAll: true})
+}
+
+filterBoxes = async (value) => {
+if (value === 'show all'){
+  this.setState({showAll: true, showEven: false, showOdd: false})
+}else if (value === 'show even'){
+  this.setState({showAll: false, showEven: true, showOdd: false})
+}else{
+  this.setState({showAll: false, showEven: false, showOdd: true})
+}
+}
+
   render() {
     return (
       <React.Fragment>
-        <Hero />
+        <Hero
+        filterBoxes = {this.filterBoxes.bind(this)} />
         <BoxContainer
         filter = {this.state} />
       </React.Fragment>
