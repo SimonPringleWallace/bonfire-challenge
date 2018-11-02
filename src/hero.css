@@ -42,3 +42,22 @@ p {
   }
 
 }
+
+/* phone  media query */
+
+@media (max-width: 400px) {
+  .hero {
+    width: 100%;
+    height:325px;
+  }
+  .greeting {
+    width: 300px;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom:15px;
+  }
+  p {
+    font-size:14px;
+  }
+}

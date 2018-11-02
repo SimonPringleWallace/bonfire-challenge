@@ -56,3 +56,26 @@
     color:rgb(82,72,93);
   }
 }
+
+@media (max-width: 400px){
+  .filter-container {
+    margin-top: 50px;
+  }
+  .filter-button {
+    width: 108px; /*140*/
+    height:31px; /*44*/
+    font-size: 12px;
+  }
+  .filter-button:hover {
+    background-color: rgb(253,236,202);
+    color:rgb(82,72,93);
+    font-weight:600;
+
+  }
+  .filter-button-clicked {
+    width: 108px;
+    height:35px;
+    font-size: 12px;
+    font-weight:600;
+  }
+}
