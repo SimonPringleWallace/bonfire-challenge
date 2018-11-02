@@ -13,11 +13,13 @@
   color:rgb(255,255,255);
   text-transform: uppercase;
   text-align: center;
-  transition: margin .3s;
+  border: 0px;
 }
 .filter-button:hover {
-  margin-top:-2px;
-  transition: margin .3s;
+  background-color: rgb(253,236,202);
+  color:rgb(82,72,93);
+  font-weight:600;
+
 }
 .filter-button-clicked {
   background-color: rgb(253,236,202);
@@ -25,7 +27,8 @@
   height:59px;
   font-family: helvetica;
   font-size: 14px;
-  color:rgb(0,0,0);
+  font-weight:600;
+  color:rgb(82,72,93);
   text-transform: uppercase;
   text-align: center;
 }

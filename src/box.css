@@ -1,10 +1,18 @@
+.lower-half {
+  padding-top:50px;
+  margin:0px;
+  background: linear-gradient(
+    to bottom,
+    rgb(231,237,242),
+    rgb(255,255,255)
+    )
+}
+
 .box-container {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  margin: 50px 50px;
-
-
+  margin: 0px 50px;
 }
 .box {
   height: 280px;
@@ -13,7 +21,7 @@
   margin: 15px;
   font-family: helvetica;
   text-transform: uppercase;
-  /* box-shadow: 1px 1px; */
+  box-shadow: 2px 2px rgb(229,236,238);
   background-color: rgb(255,255,255);
   border-radius:4px;
 }
