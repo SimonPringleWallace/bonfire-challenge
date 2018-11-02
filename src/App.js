@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Hero} from './hero.js';
-import Filters from './filter-bar.js';
 import BoxContainer from './box-container.js'
 import './App.css';
 
