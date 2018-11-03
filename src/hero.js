@@ -56,10 +56,9 @@ class Hero extends React.Component {
         <div className='greeting'>
           <h1> Why Hello There</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et 
           </p>
         </div>
         <div className='filter-container'>

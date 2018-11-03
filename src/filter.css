@@ -60,7 +60,7 @@
 
 @media (max-width: 550px){
   .filter-container {
-    margin-top: 75px;
+    margin-top: 90px;
   }
   .filter-button {
     width: 140px;
@@ -85,7 +85,7 @@
 
 @media (max-width: 460px){
   .filter-container {
-    margin-top: 30px;
+    margin-top: 47px;
   }
   .filter-button {
     width: 108px; /*140*/
