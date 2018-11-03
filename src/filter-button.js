@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const FilterButton =({filterBoxes, toggleButtons, selectedButton, value}) => {
 
