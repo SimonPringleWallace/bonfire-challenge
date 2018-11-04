@@ -24,30 +24,11 @@ class Hero extends React.Component {
     }else{
       this.setState({showAll: false, showEven: false, showOdd: true})
     }
-    console.log(this.state)
   }
 // TODO: DRY out these three functions
-  showAll = () => {
-    if (this.state.showAll) {
-      return '-clicked'
-    }else{
-      return ''
-    }
-  }
-  showEven = () => {
-    if (this.state.showEven) {
-      return '-clicked'
-    }else {
-      return ''
-    }
-  }
-  showOdd = () => {
-    if (this.state.showOdd) {
-      return '-clicked'
-    }else{
-      return ''
-    }
-  }
+  showAll = () => (this.state.showAll ? '-clicked' : '')
+  showEven = () => (this.state.showEven ? '-clicked' : '')
+  showOdd = () => (this.state.showOdd ? '-clicked' : '')
 
   render () {
     return (
