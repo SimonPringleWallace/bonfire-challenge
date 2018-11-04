@@ -8,12 +8,12 @@
 }
 .greeting {
   text-align: center;
-  width: 535px;
+  width: 540px;
   margin: 0 auto;
-  color: rgb(255,255,255)
+  color: rgb(255,255,255);
+  margin-top:-25px;
 }
 h1 {
-  /* TODO: double check distance between this and the header looks a little low*/
   font-size: 44px;
   font-family: georgia;
   margin-bottom: 20px;
@@ -33,6 +33,7 @@ p {
   }
   .greeting {
     width: 500px;
+    margin-top: 0px;
   }
   h1 {
     font-size: 30px;
