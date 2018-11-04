@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Hero from './hero.js';
-import BoxContainer from './box-container.js'
+import BoxContainer from './Boxes-Box_Container/box-container.js'
 import './App.css';
 
 class App extends Component {

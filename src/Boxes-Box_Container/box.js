@@ -8,8 +8,8 @@ class BoxContainer extends Component {
       <React.Fragment>
         <div className='box'>
           <div className='box-content'>
-          <h3>Box Number {this.props.number}</h3>
-          <p className='card-description'>useless subtext</p>
+          <h3>{this.props.title}</h3>
+          <p className='card-description'>{this.props.subtext}</p>
         <button className='case-study'> view the case study</button>
          </div>
         </div>

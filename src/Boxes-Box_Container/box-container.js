@@ -6,31 +6,31 @@ import './box.css'
 const BoxContainer = ({filter}) => {
   // TODO: add animation to make the filtering process less jarring
 
-  // generate boxes on the web page based off of the data in the array above
+  // generate boxes on the web page based off of the data in box-data.js
   const boxFilter = () => {
     if (filter.showAll){
       return boxData.map(box => (
         <Box
-          key={box.number}
-          number = {box.number}
+          key={box.id}
+          title = {box.title}
           subtext = {box.subtext}
         />
       ))
     }else if (filter.showEven){
-        const evenBoxes = boxData.filter(box => box.number % 2 === 0)
+        const evenBoxes = boxData.filter(box => box.id % 2 === 0)
         return evenBoxes.map(evenBox => (
         <Box
-          key={evenBox.number}
-          number = {evenBox.number}
+          key={evenBox.id}
+          title = {evenBox.title}
           subtext = {evenBox.subtext}
         />
       ))
     }else if (filter.showOdd){
-        const oddBoxes = boxData.filter(box => box.number % 2 > 0)
+        const oddBoxes = boxData.filter(box => box.id % 2 > 0)
         return oddBoxes.map(oddBox => (
         <Box
-          key={oddBox.number}
-          number = {oddBox.number}
+          key={oddBox.id}
+          title = {oddBox.title}
           subtext = {oddBox.subtext}
         />
       ))
