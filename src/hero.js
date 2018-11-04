@@ -4,18 +4,29 @@ import FilterButton from './filter-button.js'
 import './filter.css'
 import './hero.css';
 
+// Component containing all elements present in the Hero image/text section of
+// page
+
 class Hero extends React.Component {
   constructor() {
     super()
+// this.state holds the status of which buttons are currently clicked and which aren't
+// to allow toggling between the buttons i.e clicking one unclickes another.
     this.state = {
       showAll: null,
       showEven: null,
       showOdd: null
     }
   }
+
+  // As a default, select the 'show all' button when the page loads
   componentDidMount(){
     this.setState({showAll: true})
   }
+
+  // toggleButtons function is passed down to the individual buttons via props, it
+  // take the value of the button clicked as an argument and set's this components
+  // state accordingly
   toggleButtons = (value) => {
     if (value === 'show all'){
       this.setState({showAll: true, showEven: false, showOdd: false})
@@ -28,9 +39,9 @@ class Hero extends React.Component {
 
   // These three functions are responsible for toggling the css class on the buttons
   // making them either 'clicked or unclicked'
-  showAll = () => (this.state.showAll ? '-clicked' : '')
-  showEven = () => (this.state.showEven ? '-clicked' : '')
-  showOdd = () => (this.state.showOdd ? '-clicked' : '')
+  showAllClicked = () => (this.state.showAll ? '-clicked' : '')
+  showEvenClicked = () => (this.state.showEven ? '-clicked' : '')
+  showOddClicked = () => (this.state.showOdd ? '-clicked' : '')
 
   render () {
     return (
@@ -45,21 +56,20 @@ class Hero extends React.Component {
           </p>
         </div>
         <div className='filter-container'>
-
           <FilterButton filterBoxes={this.props.filterBoxes.bind(this)}
                         value='show all'
                         toggleButtons={this.toggleButtons.bind(this)}
-                        selectedButton={this.showAll()}>
+                        selectedButton={this.showAllClicked()}>
                         </FilterButton>
           <FilterButton filterBoxes={this.props.filterBoxes.bind(this)}
                         value='show even'
                         toggleButtons={this.toggleButtons.bind(this)}
-                        selectedButton={this.showEven()}>
+                        selectedButton={this.showEvenClicked()}>
                         </FilterButton>
           <FilterButton filterBoxes={this.props.filterBoxes.bind(this)}
                         value='show odd'
                         toggleButtons={this.toggleButtons.bind(this)}
-                        selectedButton={this.showOdd()}>
+                        selectedButton={this.showOddClicked()}>
                        </FilterButton>
         </div>
       </div>
