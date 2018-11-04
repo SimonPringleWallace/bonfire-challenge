@@ -25,7 +25,9 @@ class Hero extends React.Component {
       this.setState({showAll: false, showEven: false, showOdd: true})
     }
   }
-// TODO: DRY out these three functions
+
+  // These three functions are responsible for toggling the css class on the buttons
+  // making them either 'clicked or unclicked'
   showAll = () => (this.state.showAll ? '-clicked' : '')
   showEven = () => (this.state.showEven ? '-clicked' : '')
   showOdd = () => (this.state.showOdd ? '-clicked' : '')
@@ -43,6 +45,7 @@ class Hero extends React.Component {
           </p>
         </div>
         <div className='filter-container'>
+
           <FilterButton filterBoxes={this.props.filterBoxes.bind(this)}
                         value='show all'
                         toggleButtons={this.toggleButtons.bind(this)}
