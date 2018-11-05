@@ -37,10 +37,10 @@ between App.js, the filter buttons and the boxes being displayed, as a triangle.
 
 ![App.js Relationships](./src/images/App.js-relationship.png)
 
-The state for App.js (which boxes are displayed and which button is selected) is
+The state for [App.js](./src/App.js) (which boxes are displayed and which button is selected) is
 set with a default value when the page loads. When a user clicks on a filter button
 the state of App.js is updated. This update causes App.js to pass the updated state
-as a prop down to [box-container.js](./src/Boxes-Box_Container) which, in turn, determines which boxes to display using the function below:
+as a prop down to [box-container.js](./src/Boxes-Box_Container/box-container.js) which, in turn, determines which boxes to display using the function below:
 
 ```
 const boxFilter = () => {
