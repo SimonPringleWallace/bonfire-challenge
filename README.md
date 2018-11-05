@@ -57,9 +57,18 @@ An additional challenge and the final piece in the UI for filtering which boxes
 are shown on the page, was toggling between the filter buttons. A smooth UI demanded
 that the action of selecting on button, automatically de-select another, which
 in turn, required that the system have some memory of which button was currently
-clicked so that the other   
+clicked so that the other. This adds an additional arrow to the chart above turning
+the relationship between filter-button.js and App.js into a loop where clicking on
+the filter button updates the state of App.js and that update in turn determines which
+button displays as clicked using these three funcitons in [hero.js](./src/hero.js):
 
-Toggle
+```
+insert three functions from hero.js here
+```
+Each of these functions is run when the state is updated and so, since clicking a
+filter button updates the state of App.js that update triggers these functions
+which check to see what the current state is and changes the css class of the
+button accordingly.
 
 SEO
 
