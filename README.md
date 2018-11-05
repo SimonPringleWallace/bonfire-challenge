@@ -1,4 +1,4 @@
-#Logo Design
+# Logo Design
 
 The creation this page was completed as a coding challenge for Bonfire Studios
 in Andover, MA. In addition to building a pixel-perfect webpage from a photoshop
@@ -9,12 +9,12 @@ button deselects the others.
 
 ![Logo Design](./src/images/logo-design.png)
 
-###Technologies Used
+### Technologies Used
 Adobe Photoshop
 React.js
 GitHub Pages
 
-###Filtering
+### Filtering
 To understand what's going on here, we should first think of the relationship
 between App.js, the filter buttons and the boxes being displayed, as a triangle.
 
@@ -57,7 +57,7 @@ const boxFilter = () => {
 }
 }
 ```
-###Toggling the Filter Button
+### Toggling the Filter Button
 An additional challenge and the final piece in the UI for filtering which boxes
 are shown on the page, was toggling between the filter buttons. A smooth UI demanded
 that the action of selecting on button, automatically de-select another, which
@@ -77,9 +77,9 @@ filter button updates the state of App.js that update triggers these functions
 which check to see what the current state is and changes the css class of the
 button accordingly.
 
-##Future Work
+## Future Work
 
-- Building out additional pages to be accessed by the nav-links
+-   Building out additional pages to be accessed by the nav-links
 at the top of the page, as well as the 'view the case study' button at the bottom
 of each of the boxes.
-- Work should also be done smoothing out the transitions in the rendering of the    filtered boxes, perhaps a quick fade-in could soften that experience
+-   Work should also be done smoothing out the transitions in the rendering of the    filtered boxes, perhaps a quick fade-in could soften that experience
