@@ -23,11 +23,11 @@ componentDidMount(){
 // based off of the value of whichever button has been clicked,
 // set the state accordingly - passed to filter-button.js as prop.
 
-filterBoxes = (value) => {
-  if (value === 'show all'){
+filterBoxes = (title) => {
+  if (title === 'show all'){
     this.setState({showAll: true, showEven: false, showOdd: false})
 
-  }else if (value === 'show even'){
+  }else if (title === 'show even'){
     this.setState({showAll: false, showEven: true, showOdd: false})
 
   }else{
@@ -40,6 +40,7 @@ filterBoxes = (value) => {
       <React.Fragment>
         <Hero
         filterBoxes = {this.filterBoxes.bind(this)}
+        filter = {this.state}
         />
         <BoxContainer
         filter = {this.state} />

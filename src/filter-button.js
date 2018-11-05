@@ -1,21 +1,21 @@
 import React from 'react';
 
-const FilterButton =({filterBoxes, toggleButtons, selectedButton, value}) => {
+const FilterButton =({filterBoxes, selectedButton, title}) => {
 
-// filterActions is responsible for triggering toggleButtons, declared in hero.js,
-// which makes the button visually appear clicked, and filterBoxes, declared in app.js,
-// which is responsible for changing which boxes acutally appear on the screen.
-const filterActions = (value) => {
-  filterBoxes(value)
-  toggleButtons(value)
+// filterActions is responsible for triggering filterBoxes, declared in app.js,
+// which is responsible for changing which boxes acutally appear on the screen
+// and controlling the toggle effect on the buttons themselves.
+const filterActions = (title) => {
+  filterBoxes(title)
+  // toggleButtons(value)
 }
 
     return (
       <React.Fragment>
         <button
           className={`filter-button${selectedButton}`}
-          onClick={filterActions.bind(this,value)}
-          >{value}
+          onClick={filterActions.bind(this,title)}
+          >{title}
           </button>
       </React.Fragment>
     )
