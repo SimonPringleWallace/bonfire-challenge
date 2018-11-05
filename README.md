@@ -9,6 +9,11 @@ button deselects the others.
 
 ![Logo Design](./src/images/logo-design.png)
 
+###Technologies Used
+Adobe Photoshop
+React.js
+GitHub Pages
+
 ###Filtering
 To understand what's going on here, we should first think of the relationship
 between App.js, the filter buttons and the boxes being displayed, as a triangle.
@@ -63,18 +68,18 @@ the filter button updates the state of App.js and that update in turn determines
 button displays as clicked using these three funcitons in [hero.js](./src/hero.js):
 
 ```
-insert three functions from hero.js here
+const showAllClicked = () => (filter.showAll ? '-clicked' : '')
+const showEvenClicked = () => (filter.showEven ? '-clicked' : '')
+const showOddClicked = () => (filter.showOdd ? '-clicked' : '')
 ```
 Each of these functions is run when the state is updated and so, since clicking a
 filter button updates the state of App.js that update triggers these functions
 which check to see what the current state is and changes the css class of the
 button accordingly.
 
-SEO
+##Future Work
 
-
-
-##Technologies
-Adobe Photoshop
-React.js
-GitHub Pages
+- Building out additional pages to be accessed by the nav-links
+at the top of the page, as well as the 'view the case study' button at the bottom
+of each of the boxes.
+- Work should also be done smoothing out the transitions in the rendering of the    filtered boxes, perhaps a quick fade-in could soften that experience
