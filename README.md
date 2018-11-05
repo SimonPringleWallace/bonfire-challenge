@@ -10,11 +10,12 @@ button deselects the others.
 ![Logo Design](./src/images/logo-design.png)
 
 ### Technologies Used
+
 -   Adobe Photoshop
 -   React.js
 -   GitHub Pages
 
-### Filtering
+### Filtering and How
 To understand what's going on here, we should first think of the relationship
 between App.js, the filter buttons and the boxes being displayed, as a triangle.
 
@@ -67,15 +68,14 @@ clicked. This adds an additional arrow to the chart above turning the relationsh
 
 ![Toggle Relationship](./src/images/toggle.png)
 
-Clicking on the filter button updates the state of App.js (through hero.js) and that update, in turn, determines which button displays as clicked using these three funcitons in [hero.js](./src/hero.js):
+Clicking on the filter button updates the state of App.js (through hero.js) and that update, in turn, determines which button displays as clicked using these three functions in [hero.js](./src/hero.js):
 
 ```
 const showAllClicked = () => (filter.showAll ? '-clicked' : '')
 const showEvenClicked = () => (filter.showEven ? '-clicked' : '')
 const showOddClicked = () => (filter.showOdd ? '-clicked' : '')
 ```
-Each of these functions is run when the state is updated and so, since clicking a
-filter button updates the state of App.js that update triggers these functions
+Each of these functions is run when the state of App.js is updated and so, since clicking a filter button updates the state, that update triggers these functions
 which check to see what the current state is and changes the css class of the
 button accordingly.
 
