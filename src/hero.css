@@ -22,7 +22,7 @@ p {
   margin: 0px;
   font-size:18px;
   font-family: helvetica;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 /* ipad media query */
@@ -77,5 +77,6 @@ p {
   }
   p {
     font-size:14px;
+    line-height: 1.25;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 105px;
+  margin-top: 92px;
 }
 .filter-button {
   background-color: rgb(105,101,121);
@@ -36,7 +36,7 @@
 
 @media (max-width: 800px){
   .filter-container {
-    margin-top: 87px;
+    margin-top: 75px;
   }
   .filter-button {
     width: 140px;
@@ -61,7 +61,7 @@
 
 @media (max-width: 550px){
   .filter-container {
-    margin-top: 90px;
+    margin-top: 80px;
   }
   .filter-button {
     width: 140px;
