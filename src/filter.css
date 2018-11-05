@@ -14,6 +14,7 @@
   text-transform: uppercase;
   text-align: center;
   border: 0px;
+  cursor: pointer;
 }
 .filter-button:hover {
   background-color: rgb(253,236,202);

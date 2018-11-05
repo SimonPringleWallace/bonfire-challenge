@@ -45,6 +45,7 @@ transition: .5s;
 .box:hover .case-study {
   opacity:1;
   transition: .5s;
+  cursor:pointer;
 }
 h3 {
   font-weight: 500;
